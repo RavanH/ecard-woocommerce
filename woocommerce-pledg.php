@@ -5,10 +5,8 @@
  * Description: Le paiement en plusieurs fois, simple et accessible.
  * Author: GiniDev
  * Author URI: https://ginidev.com
- * Version: 1.0.1
+ * Version: 1.0.2
  */
-
-
 
 define('WOOCOMMERCE_PLEDG_PLUGIN_DIR', plugin_dir_path( __FILE__ ));
 
