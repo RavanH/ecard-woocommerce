@@ -31,7 +31,10 @@ function pledg_add_gateway_class( $gateways ) {
  */
 add_action( 'plugins_loaded', 'pledg_init_gateway_class' );
 function pledg_init_gateway_class() {
+	if ( ! class_exists( 'WC_Payment_Gateway' ) ) return;
+	
     require_once __DIR__ . '/includes/classes/WC_Pledg_Gateway.php';
+	
 	class WC_Pledg_Gateway_1 extends WC_Pledg_Gateway {
 
  		public function __construct() {
